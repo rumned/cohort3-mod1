@@ -1,0 +1,38 @@
+.box {
+  background-color: blue;
+}
+.grid-container {
+  display: grid;
+  /* pixels, auto, fr (fraction unit) */
+  grid-template-columns: repeat(4, 1fr);
+  /* if you specify the pixels here, then this is the limiter of the grid size, the ones not fitting would only has the height of their content */
+  grid-template-rows: auto auto;
+  /* column-gap: 50px;
+  row-gap: 10px; */
+  gap: 10px 50px;
+} 
+
+/* I want to target all div elements that is inside a class called grid-container */
+.grid-container div {
+  border: 2px solid black;
+  background-color: lightgrey;
+  font-size: 36px;
+  text-align: center;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.item3 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.grid-container div:nth-child(odd) {
+  background-color: grey;
+}
+.grid-container div:nth-child(even) {
+  background-color: tomato;
+} */
