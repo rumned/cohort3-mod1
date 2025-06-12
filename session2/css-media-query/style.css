@@ -1,5 +1,8 @@
 /* min-width - you need to reach the pixels first then the style will apply*/
 /* max-width - style will apply until the pixel you specify */
+/* the movement of pixels for both is assumed from 0px, which means,
+for min-width, default style will apply until 1px before the specified value
+for max-width, specified style will apply until 1px before the specified value */
 
 .flex-container {
   display: flex;
