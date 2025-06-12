@@ -1,0 +1,29 @@
+/* min-width - you need to reach the pixels first then the style will apply*/
+/* max-width - style will apply until the pixel you specify */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.child img {
+  width: 100%;
+}
+
+/* I want to target elements at 991px and above! */
+@media (min-width: 991px) {
+  body {
+    background-color: tomato;
+  }
+  .child {
+    width: 20%;
+  }
+}
+
+/* I want to target elements at 576px and below! */
+@media (max-width: 576px) {
+  body {
+    background-color: gold;
+  }
+}

@@ -1,0 +1,62 @@
+.header {
+  background-color: lightsteelblue;
+  height: 100vh; /*viewport height= device screen height*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  /* flex-wrap:wrap is needed to make non-fitting elements to go down */
+  flex-wrap: wrap;
+  row-gap: 5px;
+}
+
+.flex-container div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.first {
+  background-color: bisque;
+  width: 50%;
+}
+.second {
+  background-color: blue;
+  width: 80%;
+}
+.third {
+  background-color: red;
+  width: 30%;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding-top: 20px;
+}
+.d-flex div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid black;
+}
+.d-flex div img {
+  width: 100%;
+}
+.d-flex div a {
+  padding: 10px 5px;
+  text-decoration: none;
+  background-color: blueviolet;
+  color: white;
+  display: inline-block;
+  /* inline-block retains inline element but block CSS properties will work */
+}
